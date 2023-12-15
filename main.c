@@ -1,5 +1,7 @@
 #include "monty.h"
+
 bus_t bus = {NULL, NULL, NULL, 0};
+
 /**
 * main - monty code interpretor
 * @argc: number of argumnts
@@ -45,6 +47,6 @@ return (0);
 }
 
 /**
- * @ Achieng Brian
- * 
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
  */
