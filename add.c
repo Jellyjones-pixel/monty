@@ -6,13 +6,13 @@
 */
 void f_add(stack_t **head, unsigned int counter)
 {
-	stack_t *t;
+	stack_t *he;
 	int len = 0, aux;
 
-	t = *head;
-	while (t)
+	he = *head;
+	while (he)
 	{
-		t = t->next;
+		he = he->next;
 		len++;
 	}
 	if (len < 2)
@@ -23,11 +23,11 @@ void f_add(stack_t **head, unsigned int counter)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	t = *head;
-	aux = t->n + t->next->n;
-	t >next->n = aux;
-	*head = t->next;
-	free(t);
+	he = *head;
+	aux = he->n + he->next->n;
+	he->next->n = aux;
+	*head = he->next;
+	free(he);
 }
 
 
