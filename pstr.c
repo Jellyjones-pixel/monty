@@ -5,12 +5,12 @@
  * @counter: line_number
  * Return: no return
 */
-void f_pstr(stack_t **head, unsigned int counter)
+void f_pstr(stack_t **header, unsigned int counter)
 {
 	stack_t *h;
 	(void)counter;
 
-	h = *head;
+	h = *header;
 	while (h)
 	{
 		if (h->n > 127 || h->n <= 0)

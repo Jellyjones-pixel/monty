@@ -5,10 +5,10 @@
   *@counter: ln_number
   *Return: no return
  */
-void f_nop(stack_t **head, unsigned int counter)
+void f_nop(stack_t **header, unsigned int counter)
 {
 	(void) counter;
-	(void) head;
+	(void) header;
 }
 /**
  * John Mbithi Mutave and Victor Mburu

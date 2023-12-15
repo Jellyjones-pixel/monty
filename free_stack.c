@@ -3,16 +3,16 @@
 * free_stack - frees doubly linked lists.
 * @head: stack head
 */
-void free_stack(stack_t *head)
+void free_stack(stack_t *header)
 {
 	stack_t *aux;
 
-	aux = head;
-	while (head)
+	aux = header;
+	while (header)
 	{
-		aux = head->next;
-		free(head);
-		head = aux;
+		aux = header->next;
+		free(header);
+		header = aux;
 	}
 }
 /**

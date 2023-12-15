@@ -5,17 +5,17 @@
  * @counter: line_number
  * Return: no return
 */
-void f_pint(stack_t **head, unsigned int counter)
+void f_pint(stack_t **header, unsigned int counter)
 {
-	if (*head == NULL)
+	if (*header == NULL)
 	{
 		fprintf(stderr, "L%u: can't pint, stack empty\n", counter);
 		fclose(bus.file);
 		free(bus.content);
-		free_stack(*head);
+		free_stack(*header);
 		exit(EXIT_FAILURE);
 	}
-	printf("%d\n", (*head)->n);
+	printf("%d\n", (*header)->n);
 }
 /**
  * John Mbithi Mutave and Victor Mburu
